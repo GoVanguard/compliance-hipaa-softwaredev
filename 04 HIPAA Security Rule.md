@@ -1,6 +1,7 @@
 # The HIPAA Security Rule
 
 Outlines national security standards intended to protect health data created, received, maintained, or transmitted electronically.
+**Note:** All safeguards noted below were specifally sourced from the [HIPAA Administrative Simplification document](https://www.hhs.gov/sites/default/files/hipaa-simplification-201303.pdf) on the HHS website.
 
 ## 3 Parts to the HIPAA Security Rule
 
@@ -17,8 +18,33 @@ The administrative components are really important when implementing a HIPAA com
 + Implement employee training
 + Review policies and procedures
 + Execute Business Associate Agreements (BAAs) with all partners who handle protected health information (PHI)
+   + If you are using AWS, get a BAA with them:
+      + https://aws.amazon.com/health/healthcare-compliance/
+      + https://aws.amazon.com/compliance/hipaa-eligible-services-reference/
+      + https://aws.amazon.com/blogs/security/accept-a-baa-with-aws-for-all-accounts-in-your-organization/
+      + https://docs.aws.amazon.com/artifact/latest/ug/managingagreements.html
+   + If you are using Google Apps Suite, get a BAA with them
+      + https://cloud.google.com/security/compliance/hipaa-compliance/
+      + https://cloud.google.com/security/compliance/hipaa/
+      + [Accept the HIPAA Business Associate Amendment](https://support.google.com/a/answer/3407074)
+   + If you are using Microsoft Office365 or Azure
+      + https://www.microsoft.com/en-us/trustcenter/compliance/compliance-overview
+      + https://www.microsoft.com/en-us/TrustCenter/Compliance/HIPAA
+      + http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=52&Language=1
+   + Get a BAA with any other SaaS/PaaS/IaaS provider that you will use that will have ePHI trasmitted through and stored within them.
+      + There is a however "conduit exception” rule that was defined as part of the HIPAA Omnibus Final Rule.
+      The HIPAA Omnibus Final Rule explicitly states that the mere conduit exception is intended to include organizations that deal with “any temporary storage of transmitted data incident to such transmission.” It continues to define the distinction between transmission (including incidental storage associated with such transmission) and ongoing storage. The difference between those two situations “is the transient vs. persistent nature of” the opportunity to access PHI. **So a BAA isn't needed for the United States Postal Service, Couriers and their electronic equivalents, and Internet service providers (ISPs).**
+      
 
-Companies like [GoVanguard](https://gvit.com) can help with the administrative components of a compliance program.
+## Required vs. Addressable Specifications
+
+Some HIPAA implementation specifications are “required” and others are “addressable.”
+**Required implementation specifications must be implemented no matter what.**
+
+**Addressable implementation specifications must be implemented and exceptions are only acceptable if it is unreasonable to impliment the specification** (for example: extremely cost prohibitive or technically infeasible). All exceptions must be thoroughly documented with evidence of why addressable specification implimentation was unreasonable.
+**It is important to remember that an addressable implementation specification is not optional.**
+
+**Honestly, you should just implement the addressable implementation specifications, they are best practice security controls anyway.**
 
 ### Technical Safeguards
 
@@ -28,16 +54,16 @@ While there are both required and addressable elements to these safeguards you s
 
 #### Access Control Requirements
 
-+ Unique User Identification (required): Assign a unique name and/or number for identifying and tracking user identity.
++ Unique User Identification **(required)**: Assign a unique name and/or number for identifying and tracking user identity.
 + Emergency Access Procedure (required): Establish (and implement as needed) procedures for obtaining necessary ePHI during an emergency.
-+ Automatic Logoff (addressable): Implement electronic procedures that terminate an electronic session after a predetermined time of inactivity.
-+ Authentication (required): Implement procedures to verify that a person or entity seeking access to ePHI is the one claimed.
-+ Encryption and Decryption (addressable): Implement a mechanism to encrypt and decrypt ePHI.
++ Automatic Logoff **(addressable)**: Implement electronic procedures that terminate an electronic session after a predetermined time of inactivity.
++ Authentication **(required)**: Implement procedures to verify that a person or entity seeking access to ePHI is the one claimed.
++ Encryption and Decryption **(addressable)**: Implement a mechanism to encrypt and decrypt ePHI in transit and at rest (ideally FIPS-140-1 and FIPS-140-2 compliant encryption algrorithms should be utilzed).
 
 #### Transmission Security
 
 + Integrity Controls (addressable): Implement security measures to ensure that electronically transmitted ePHI is not improperly modified without detection until disposed of.
-+ Encryption (addressable): Implement a mechanism to encrypt ePHI whenever deemed appropriate.
++ Encryption and Decryption **(addressable)**: Implement a mechanism to encrypt and decrypt ePHI in transit and at rest (ideally FIPS-140-1 and FIPS-140-2 compliant encryption algrorithms should be utilzed).
 
 #### Audit and Integrity
 
@@ -68,13 +94,3 @@ Other parts of the Physical Safeguards are handled by your internal rules around
 
 + Workstation Security (required): Implement physical safeguards for all workstations that access ePHI, to restrict access to authorized users.
 + Workstation Use (required): Implement policies and procedures that specify the proper functions to be performed, the manner in which those functions are to be performed, and the physical attributes of the surroundings of a specific workstation or class of workstation that can access ePHI.
-
-## Required vs. addressable specifications
-
-Some implementation specifications are “required” and others are “addressable.” Required implementation specifications must be implemented.
-
-Addressable implementation specifications must be implemented if it is reasonable and appropriate to do so; your choice must be documented.
-
-It is important to remember that an addressable implementation specification is not optional.
-
-**When in doubt, you should just implement the addressable implementation specifications. Most of them are best practices anyway.**
