@@ -1,8 +1,6 @@
 # Developers Guide to HIPAA Compliance
 =================================
 
-Version 1.0
-
 ## About
 
 This guide is designed to provide developers with a solid understanding of HIPAA guidelines and their implications for application development. 
@@ -16,3 +14,6 @@ This guide will give you enough information to give you a strong understanding o
 ## Disclaimer
 
 We're not lawyers. Nothing in this guide constitutes legal advice. Talk to one if you have specific questions regarding your application and HIPAA compliance.
+
+## Attribution
+This guide was orginally sourced from [TrueVault's HIPAA Compliance Developers Guide](https://github.com/truevault/hipaa-compliance-developers-guide/) and has been updated from the orginal 2014 material.
