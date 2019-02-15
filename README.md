@@ -16,4 +16,4 @@ This guide will give you enough information to give you a strong understanding o
 We're not lawyers. Nothing in this guide constitutes legal advice. Talk to one if you have specific questions regarding your application and HIPAA compliance.
 
 ## Attribution
-This guide was orginally sourced from [TrueVault's HIPAA Compliance Developers Guide](https://github.com/truevault/hipaa-compliance-developers-guide/) and has been updated from the orginal 2014 material.
+This guide was orginally sourced from [TrueVault's HIPAA Compliance Developers Guide](https://github.com/truevault/hipaa-compliance-developers-guide/). TrueVault's orginal 2014 material was forked to be updated with the latest HHS guidance and include more content such as examples, specific HIPAA clauses, references and more.
