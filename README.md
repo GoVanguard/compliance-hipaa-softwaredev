@@ -1,4 +1,4 @@
-# Developers Guide to HIPAA Compliance
+# Software Developers Guide to HIPAA Compliance
 =================================
 
 ## About
@@ -17,3 +17,9 @@ We're not lawyers. Nothing in this guide constitutes legal advice. Talk to one i
 
 ## Attribution
 This guide was orginally sourced from [TrueVault's HIPAA Compliance Developers Guide](https://github.com/truevault/hipaa-compliance-developers-guide/). TrueVault's orginal 2014 material was forked to be updated with the latest HHS guidance and include more content such as examples, specific HIPAA clauses, references and more.
+
+## License
+
+[![CC-BY](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
