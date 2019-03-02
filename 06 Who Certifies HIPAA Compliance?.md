@@ -12,3 +12,4 @@ That said, being evaluated by an independent, third-party auditor is still an ex
 
 **Note**
 There is an information security framework (not a regulatory law) called HITRUST CSF that is closely aligned with HIPAA specifications and in many cases more concretely builds upon HIPAA. Leaders of healthcare providers, payers, and third-party vendors formed the HITRUST alliance to regulate the interpretation of inconsistent views on data security standards. HITRUST, in partnership with other industry leaders, created the Common Security Framework (CSF) to be the premier model for the future of healthcare compliance validation. Because HIPAA mandates are so convoluted, HITRUST CSF Certification gives an additional rationale for businesses to uphold a higher standard in regards to the value of data. HITRUST CSF Certification is a certification that is established after a rigorous third-party audit that recognizes complete compliance with HIPAA regulations and more.
+ 
