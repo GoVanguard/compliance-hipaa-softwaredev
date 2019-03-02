@@ -9,7 +9,7 @@ So how do you know if you’re dealing with protected health information (PHI) o
 If you are building a wearable device or application that collects health information, but does not plan on sharing it with a covered entity at any point in time then you do not need to be HIPAA compliant.
 
 **Below are some examples from the HHS to provide further guidance.**
-Further examples can be found on the HHS website in their [Health App Use Scnarios & HIPAA](https://hipaaqsportal.hhs.gov/community-library/accounts/92/925889/Public/OCR-health-app-developer-scenarios-2-2016.pdf) document.
+Further examples can be found on the HHS website in their [Health App Use Scenarios & HIPAA](https://hipaaqsportal.hhs.gov/community-library/accounts/92/925889/Public/OCR-health-app-developer-scenarios-2-2016.pdf) document.
 
 ### App Scenario 1:
 A consumer downloads a health app to their smartphone. They populate it with their own information. For example, the consumer inputs blood glucose levels and blood pressure readings they obtained herself using home health equipment.
@@ -31,7 +31,7 @@ A consumer downloads to their smart phone a mobile PHR app offered by their heal
 
 **Does HIPAA Compliance Apply?** Yes, with respect to the app offered by the health plan, and no, when offering the direct-to-consumer app. Developer is a business associate of the health plan, because it is creating, receiving, maintaining or transmitting protected health information (PHI) on behalf of a covered entity. Developer must comply with applicable HIPAA Rules requirements with respect to the PHI involved in its work on behalf of the health plan. **But its “direct-to-consumer” product is not provided on behalf of a covered entity or other business associate, and developer activities with respect to that product are not subject to the HIPAA Rules.** Therefore, as long as the developer keeps the health information attached to these two versions of the app separate, so that information from the direct-to-consumer version is not part of the product offering to the covered entity health plan, **the developer does not need to apply HIPAA protections to the consumer information obtained through the “direct-to- consumer” app**.
 
-### In Conlusion:
+### In Conclusion:
 The majority of medical apps you see on Google Play and Apple iTune App Store don’t fall under HIPAA, as they’re usually intended for a patient’s personal use. These are apps for monitoring certain health aspects (weight, pulse, or glucose levels) or those to follow the medication schedule (unless this data is transmitted to a health plan server). Also, HIPAA Rules won’t apply if a patient downloads an app to send summary reports by a doctor’s recommendation. This is because the covered entity (the doctor) doesn’t enter into an agreement with a developer.
 
 **Note:** If your app does augment or interface with a medical device (like a blood glucose monitor) then you should be considerate of the [FDA's guidelines and regulations pertaining to Mobile Medical Application](https://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/GuidanceDocuments/UCM263366.pdf) which is a seperate topic in itself that is outside the scope of this guide (at least currently).
