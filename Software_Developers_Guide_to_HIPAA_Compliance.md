@@ -26,7 +26,7 @@ HIPAA violations are expensive. The penalties for noncompliance are based on the
 
 Fines will increase with the number of patients and the amount of neglect. Starting with a breach where you didn’t know and, by exercising reasonable diligence, would not have known that you violated a provision. To the other end of the spectrum where a breach is due to negligence and not corrected in 30 days.
 
-The fines and charges are broken down into 2 major categories: “Reasonable Cause” and “Willful Neglect”. Reasonable Cause ranges from $100 to $50,000 per incident and does not involve any jail time. Willful Neglect ranges from $10,000 to $50,000 for each incident and can result in criminal charges.
+The fines and charges are broken down into 2 major categories: “Reasonable Cause” and “Willful Neglect.” Reasonable Cause ranges from $100 to $50,000 per incident and does not involve any jail time. Willful Neglect ranges from $10,000 to $50,000 for each incident and can result in criminal charges.
 
 **HIPAA violation categories and their respective penalty amounts are outlined in the chart below:**
 
@@ -49,7 +49,7 @@ Like the four horsemen, these are the significant pieces that govern what you do
 
 ## Important Terms to Know
 ### Protected Health Information (PHI)
-PHI is any information in a medical record that can be used to identify an individual, and that was created, used, or disclosed in the course of providing a health care service, such as a diagnosis or treatment. Digitally-stored PHI is reffered to as electronic Protected Health Information (ePHI).
+PHI is any information in a medical record that can be used to identify an individual, and that was created, used, or disclosed in the course of providing a health care service, such as a diagnosis or treatment. Digitally-stored PHI is referred to as electronic Protected Health Information (ePHI).
 
 In other words, PHI is information in your medical records, including conversations between your doctors and nurses about your treatment. PHI also includes your billing information and any medical information in your health insurance company's computer system.
 
@@ -127,14 +127,14 @@ If you are building a wearable device or application that collects health inform
 Further examples can be found on the HHS website in their [Health App Use Scenarios & HIPAA](https://hipaaqsportal.hhs.gov/community-library/accounts/92/925889/Public/OCR-health-app-developer-scenarios-2-2016.pdf) document.
 
 ### App Scenario 1:
-A consumer downloads a health app to their smartphone. They populate it with their own information. For example, the consumer inputs blood glucose levels and blood pressure readings they obtained herself using home health equipment.
+A consumer downloads a health app to their smartphone. They populate it with their information. For example, the consumer inputs blood glucose levels and blood pressure readings they obtained herself using home health equipment.
 
-**Does HIPAA Compliance Apply?** No. The developer is not creating, receiving, maintaining or transmitting protected health information (PHI) on behalf of a covered entity or another business associate. The consumer is using the developer’s app to help  manage and organize their information without any involvement of her health care providers.
+**Does HIPAA Compliance Apply?** No. The developer is not creating, receiving, maintaining or transmitting protected health information (PHI) on behalf of a covered entity or another business associate. The consumer is using the developer’s app to help manage and organize their information without any involvement of her health care providers.
 
 ### App Scenario 2:
-A consumer downloads a health app to their smartphone that is designed to help them manage a chronic condition. They download data from their doctor’s EHR through a patient portal, onto their computer and then uploads it into the app. They also add their own information to the app.
+A consumer downloads a health app to their smartphone that is designed to help them manage a chronic condition. They download data from their doctor’s EHR through a patient portal, onto their computer and then uploads it into the app. They also add their information to the app.
 
-**Does HIPAA Compliance Apply?** No. The developer is not creating, receiving, maintaining or transmitting protected health information (PHI) on behalf of a covered entity or another business associate. Instead, the consumer obtains health information from their provider, combines it with health information they input and uses the app to organize and manage that information for their own purposes. There is no indication that the provider or a business associate of the provider hired the app developer to provide or facilitate this service.
+**Does HIPAA Compliance Apply?** No. The developer is not creating, receiving, maintaining or transmitting protected health information (PHI) on behalf of a covered entity or another business associate. Instead, the consumer obtains health information from their provider, combines it with health information they input and uses the app to organize and manage that information for their purposes. There is no indication that the provider or a business associate of the provider hired the app developer to provide or facilitate this service.
 
 ### App Scenario 3:
 At the direction of their provider, a patient downloads a health app to their smartphone. The provider has contracted with app developer for patient management services, including remote patient health counseling, monitoring of patients’ food and exercise, patient messaging, EHR integration and application interfaces. Information the patient inputs are automatically incorporated into the provider's EHR.
@@ -142,7 +142,7 @@ At the direction of their provider, a patient downloads a health app to their sm
 **Does HIPAA Compliance Apply?** Yes, the developer is a business associate of the provider, because it is creating, receiving, maintaining and transmitting protected health information (PHI) on behalf of a covered entity. In this case, the provider contracts with the app developer for patient management services that involve creating, receiving, maintaining and transmitting PHI, and the app is a means for providing those services.
 
 ### App Scenario 4:
-A consumer downloads to their smartphone a mobile PHR app offered by their health plan that offers users in its network the ability to request, download and store health plan records and check the status of claims and coverage decisions. The app also contains the plan’s wellness tools for members, so they can track their progress in improving their health. Health plan analyzes health information and data about app usage to understand the effectiveness of its health and wellness offerings. App developer also offers a separate, direct to-consumer version of the app that consumers can use to store, manage, and organize their health records, to improve their health habits and to send health information to providers.
+A consumer downloads to their smartphone a mobile PHR app offered by their health plan that offers users in its network the ability to request, download and store health plan records and check the status of claims and coverage decisions. The app also contains the plan’s wellness tools for members, so they can track their progress in improving their health. Health plan analyzes health information and data about app usage to understand the effectiveness of its health and wellness offerings. App developer also offers a separate, direct-to-consumer version of the app that consumers can use to store, manage, and organize their health records, to improve their health habits and to send health information to providers.
 
 **Does HIPAA Compliance Apply?** Yes, concerning the app offered by the health plan, and no, when offering the direct-to-consumer app. The developer is a business associate of the health plan because it is creating, receiving, maintaining or transmitting protected health information (PHI) on behalf of a covered entity. The developer must comply with applicable HIPAA Rules requirements concerning the PHI involved in its work on behalf of the health plan. **But its “direct-to-consumer” product is not provided on behalf of a covered entity or other business associates, and developer activities concerning that product are not subject to the HIPAA Rules.** Therefore, as long as the developer keeps the health information attached to these two versions of the app separate, so that information from the direct-to-consumer version is not part of the product offering to the covered entity health plan, **the developer does not need to apply HIPAA protections to the consumer information obtained through the “direct-to-consumer” app**.
 
@@ -170,11 +170,11 @@ There is an information security framework (not a regulatory law) called [HITRUS
 
 **The short answer is no. HIPAA hosting alone does not make you HIPAA compliant.**
 
-Compliance is determined by the adherence to the privacy and security rules outlined by HIPAA. HIPAA Hosting only addresses one aspect of those requirements.nHosting your application in a HIPAA compliant hosting environment such as Amazon AWS or Firehost does not make your application HIPAA compliant as they only address the physical safeguard requirements of the HIPAA security rule. You are still required to meet the administrative and technical specifications of the HIPAA Security Rule in order to be compliant.
+Compliance is determined by the adherence to the privacy and security rules outlined by HIPAA. HIPAA Hosting only addresses one aspect of those requirements. Hosting your application in a HIPAA compliant hosting environment such as Amazon AWS or Firehost does not make your application HIPAA compliant as they only address the physical safeguard requirements of the HIPAA security rule. You are still required to meet the administrative and technical specifications of the HIPAA Security Rule in order to be compliant.
 
 ### What Data Should Be Stored in HIPAA Compliant Hosting Environments?
 
-Not all of your application data needs to exist in a HIPAA hosting environment. But any PHI must be in a HIPAA compliant environment.
+Not all of your application data needs to exist in a HIPAA hosting environment. However, any PHI must be in a HIPAA compliant environment.
 
 ### Network and application security
 
@@ -188,9 +188,9 @@ It's easy to imagine hackers trying to breach your servers when your application
 
 A good infrastructure design eliminates all single-point-of-failures. While running one web server and one database server may save you money in the short run, how much would it cost your business if that one web server goes offline causing the entire hosting environment to crumble?
 
-It's best to design your hosting environment with at least 2 web servers behind a load balancer and 2 database servers on a active/passive failover setup.
+It's best to design your hosting environment with at least 2 web servers behind a load balancer and 2 database servers on an active/passive failover setup.
 
-Clearly most environments are more complicated than just a 2-tier setup, so you must implement an infrastructure design best suited for your business. But the point remains, high-availability and redundancy are crucial parts of your HIPAA compliant infrastructure.
+Most environments are more complicated than just a 2-tier setup, so you must implement an infrastructure design best suited for your business. However, the point remains, high-availability and redundancy are crucial parts of your HIPAA compliant infrastructure.
 
 ## The HIPAA Security Rule
 
@@ -284,4 +284,3 @@ Other parts of the Physical Safeguards are handled by your internal rules around
 
 + Workstation Security (required): Implement physical safeguards for all workstations that access ePHI, to restrict access to authorized users.
 + Workstation Use (required): Implement policies and procedures that specify the proper functions to be performed, how those functions are to be performed and the physical attributes of the surroundings of a specific workstation or class of workstation that can access ePHI.
-
