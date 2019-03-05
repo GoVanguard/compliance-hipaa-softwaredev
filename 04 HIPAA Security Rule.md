@@ -15,6 +15,8 @@ The administrative components are essential when implementing a HIPAA compliance
 
 + Assign a privacy officer
 + Complete a risk assessment annually
+   + [Health IT Gov's Security Risk Assessment Tool](https://www.healthit.gov/topic/privacy-security-and-hipaa/security-risk-assessment-tool)
+   + [NIST's HIPAA Security Rule Toolkit - Depreciated](https://csrc.nist.gov/projects/security-content-automation-protocol/hipaa)
 + Implement employee training
 + Review policies and procedures
 + Execute Business Associate Agreements (BAAs) with all partners who handle protected health information (PHI)
@@ -31,9 +33,9 @@ The administrative components are essential when implementing a HIPAA compliance
       + https://www.microsoft.com/en-us/trustcenter/compliance/compliance-overview
       + https://www.microsoft.com/en-us/TrustCenter/Compliance/HIPAA
       + http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=52&Language=1
-   + Get a BAA with any other SaaS/PaaS/IaaS provider that you will use that will have ePHI transmitted through and stored within them.
-      + There is a, however, "conduit exception” rule that was defined as part of the HIPAA Omnibus Final Rule.
-      The HIPAA Omnibus Final Rule explicitly states that the mere conduit exception is intended to include organizations that deal with “any temporary storage of transmitted data incident to such transmission.” It continues to define the distinction between transmission (including incidental storage associated with such transmission) and ongoing storage. The difference between those two situations “is the transient vs. persistent nature of” the opportunity to access PHI. **So a BAA isn't needed for the United States Postal Service, Couriers, and their electronic equivalents, and Internet service providers (ISPs).**
+   + Get a BAA with any other SaaS/PaaS/IaaS provider that you will use that will have ePHI transmitted through and stored within them. Review the[HHS's Article "Guidance on HIPAA and Cloud Computing"](https://www.hhs.gov/hipaa/for-professionals/special-topics/cloud-computing/index.html) further discusses the conduit exception.
+   + Note: There is "conduit exception” rule that was defined as part of the HIPAA Omnibus Final Rule.
+      The HIPAA Omnibus Final Rule explicitly states that the mere conduit exception is intended to include organizations that deal with “any temporary storage of transmitted data incident to such transmission.” It continues to define the distinction between transmission (including incidental storage associated with such transmission) and ongoing storage. The difference between those two situations “is the transient vs. persistent nature of” the opportunity to access PHI. **So a BAA isn't needed for the United States Postal Service, Couriers, and their electronic equivalents, and Internet service providers (ISPs).** The [HHS's Article "Guidance on HIPAA and Cloud Computing"](https://www.hhs.gov/hipaa/for-professionals/special-topics/cloud-computing/index.html) further discusses the conduit exception.
       
 
 ## Required vs. Addressable Specifications
@@ -85,7 +87,7 @@ Other parts of the Physical Safeguards are handled by your internal rules around
 
 #### Device and Media Controls
 
-+ Disposal (required): Implement policies and procedures to address the final disposition of ePHI, and/or the hardware or electronic media on which it is stored.
++ Disposal (required): Implement policies and procedures to address the final disposition of ePHI, and/or the hardware or electronic media on which it is stored. Please see the [HHS's Article "Guidance to Render Unsecured Protected Health Information Unusable, Unreadable, or Indecipherable to Unauthorized Individuals"](https://www.hhs.gov/hipaa/for-professionals/breach-notification/guidance/index.html)
 + Media Re-Use (required): Implement procedures for removal of ePHI from electronic media before the media are made available for re-use.
 + Accountability (addressable): Maintain a record of the movements of hardware and electronic media and any person responsible therefore.
 + Data Backup and Storage (addressable): Create a retrievable, exact copy of ePHI, when needed, before movement of equipment.
