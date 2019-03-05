@@ -1,4 +1,4 @@
-# The Software Developers Guide to HIPAA Compliance
+# Software Developers Guide to HIPAA Compliance
 
 ## Introduction
 HIPAA, the [Health Insurance Portability and Accountability Act](http://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act), was passed in 1996, and among other things, outlines the requirements for the management of, storage and transmission of protected health information (PHI) in both physical and digital form. Moreover, while the original legislation pre-dates the rise of the commercial Internet (and the iPhone by a decade), its rules govern the use of this special type of personal data by applications on the web and mobile devices.
@@ -20,7 +20,6 @@ From a breakdown of the terms and requirements to specific examples of HIPAA-cov
 
 Whether you decide that your application falls under HIPAA guidelines or not, this guide gives you the information you need to make that decision.
 
-
 ## Why is HIPAA Important?
 ### HIPAA Fines
 HIPAA violations are expensive. The penalties for noncompliance are based on the level of negligence and can range from $100 to $50,000 per violation (or per record), with a maximum penalty of $1.5 million per year for violations of an identical provision. Violations can also carry criminal charges that can result in jail time.
@@ -30,21 +29,15 @@ Fines will increase with the number of patients and the amount of neglect. Start
 The fines and charges are broken down into 2 major categories: “Reasonable Cause” and “Willful Neglect”. Reasonable Cause ranges from $100 to $50,000 per incident and does not involve any jail time. Willful Neglect ranges from $10,000 to $50,000 for each incident and can result in criminal charges.
 
 **HIPAA violation categories and their respective penalty amounts are outlined in the chart below:**
-
 ![hipaa violations summary](https://dg80atg7s3qsy.cloudfront.net/blog/img/hipaa-violations.png)
-
 Source: HHS, Federal Register.gov
 
 **What sort of penalties are we talking about? Check out this chart with fines levied in years past:**
-
 ![hipaa fines table](https://dg80atg7s3qsy.cloudfront.net/blog/img/hipaa-fines.png)
-
 Source: HHS, Case Examples and Resolution Agreements
 
 ## The Four Rules of HIPAA
-
 Like the four horsemen, these are the significant pieces that govern what you do and how you do it.
-
 + HIPAA Privacy Rule
 + HIPAA Security Rule
 + HIPAA Enforcement Rule
@@ -53,17 +46,12 @@ Like the four horsemen, these are the significant pieces that govern what you do
 **Software developers mostly need to focus on the Security Rule and Breach Notification Rule.
 
 ## Important Terms to Know
-
 ### Protected Health Information (PHI)
-
-You hear this term non-stop when dealing with applications that can store health information. It's typically called PHI although some parts of the law refer to digitally-stored PHI as ePHI. We'll stick with PHI for consistency.
-
-PHI is any information in a medical record that can be used to identify an individual, and that was created, used, or disclosed in the course of providing a health care service, such as a diagnosis or treatment.
+PHI is any information in a medical record that can be used to identify an individual, and that was created, used, or disclosed in the course of providing a health care service, such as a diagnosis or treatment. Digitally-stored PHI is reffered to as electronic Protected Health Information (ePHI).
 
 In other words, PHI is information in your medical records, including conversations between your doctors and nurses about your treatment. PHI also includes your billing information and any medical information in your health insurance company's computer system.
 
 Some examples of PHI:
-
 + Billing information from your doctor
 + Email to your doctor's office about a medication or prescription you need.
 + Appointment scheduling note with your doctor's office
@@ -72,28 +60,22 @@ Some examples of PHI:
 + Phone records
 
 Examples of non-PHI data:
-
 + Number of steps in a pedometer
 + Number of calories burned
 + Blood sugar readings w/out personally identifiable user information (PII) (such as an account or user name)
 + Heart rate readings w/out PII
 
 ### The Difference Between Protected Health Information and Consumer Health Information
-
 So how do you know if you’re dealing with protected health information (PHI) or consumer health information? The test is pretty simple: if your device or application stores, records or transmits the user’s personally-identifiable health data held in the app or device to a covered entity (see below) then you are dealing with protected health information and need to be HIPAA compliant.
 
-If you are building a wearable device or application that collects health information but does not plan on sharing it with a covered entity at any point in time, then you do not need to be HIPAA compliant.
-
-For example, the Nike Fuel Band is not HIPAA compliant because it does not track data considered protected health information because you can't transmit that data from the device to a covered entity.
+If you are building a wearable device or application that collects health information but does not plan on sharing it with a covered entity at any point in time, then you do not need to be HIPAA compliant. For example, the Nike Fuel Band is not HIPAA compliant because it does not track data considered protected health information because you can't transmit that data from the device to a covered entity.
 
 ### Covered Entity
-
 A covered entity is anyone who provides treatment, payment, and operations in healthcare.
 
 According to the U.S. Department of Health & Human Services (HHS) Healthcare Providers, Health Plans, and Healthcare Clearinghouses are all Covered Entities.
 
 Covered Entities Include:
-
 + Doctor’s office, dental offices, clinics, psychologists,
 + Nursing home, pharmacy, hospital or home healthcare agency
 + Health plans, insurance companies, HMOs
