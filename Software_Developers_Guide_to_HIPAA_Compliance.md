@@ -29,10 +29,12 @@ Fines will increase with the number of patients and the amount of neglect. Start
 The fines and charges are broken down into 2 major categories: “Reasonable Cause” and “Willful Neglect”. Reasonable Cause ranges from $100 to $50,000 per incident and does not involve any jail time. Willful Neglect ranges from $10,000 to $50,000 for each incident and can result in criminal charges.
 
 **HIPAA violation categories and their respective penalty amounts are outlined in the chart below:**
+
 ![hipaa violations summary](https://dg80atg7s3qsy.cloudfront.net/blog/img/hipaa-violations.png)
 Source: HHS, Federal Register.gov
 
 **What sort of penalties are we talking about? Check out this chart with fines levied in years past:**
+
 ![hipaa fines table](https://dg80atg7s3qsy.cloudfront.net/blog/img/hipaa-fines.png)
 Source: HHS, Case Examples and Resolution Agreements
 
@@ -43,7 +45,7 @@ Like the four horsemen, these are the significant pieces that govern what you do
 + HIPAA Enforcement Rule
 + HIPAA Breach Notification Rule
 
-**Software developers mostly need to focus on the Security Rule and Breach Notification Rule.
+**Software developers mostly need to focus on the Security Rule and Breach Notification Rule.**
 
 ## Important Terms to Know
 ### Protected Health Information (PHI)
@@ -51,7 +53,7 @@ PHI is any information in a medical record that can be used to identify an indiv
 
 In other words, PHI is information in your medical records, including conversations between your doctors and nurses about your treatment. PHI also includes your billing information and any medical information in your health insurance company's computer system.
 
-Some examples of PHI:
+**Some examples of PHI:**
 + Billing information from your doctor
 + Email to your doctor's office about a medication or prescription you need.
 + Appointment scheduling note with your doctor's office
@@ -59,7 +61,7 @@ Some examples of PHI:
 + Blood test results
 + Phone records
 
-Examples of non-PHI data:
+**Examples of non-PHI data:**
 + Number of steps in a pedometer
 + Number of calories burned
 + Blood sugar readings w/out personally identifiable user information (PII) (such as an account or user name)
@@ -83,7 +85,6 @@ Covered Entities Include:
 + Health clearinghouses
 
 ### Business Associate
-
 Simply put, a Business Associate is a vendor or subcontractor who has access to PHI.
 
 A more legalese definition of a Business Associate is any entity that uses or discloses PHI on behalf of a Covered Entity. Furthermore, a Business Associate is any person who, on behalf of a Covered Entity, performs (or assists in the performance of) a function or activity involving the use or disclosure of PHI.
@@ -96,8 +97,7 @@ If a Covered Entity (customer) sends PHI through a vendor, and the vendor’s se
 
 Unlike other laws (DMCA anyone?) there is no "safe harbor" clause with HIPAA. Just because you don't want to handle PHI doesn't opt you out of HIPAA compliance requirements.
 
-Examples of Potential Business Associates Include:
-
+**Examples of Potential Business Associates Include:**
 + Data processing firms or software companies that may be exposed to or use PHI
 + Medical equipment service companies handling equipment that holds PHI
 + Shredding and documentation storage companies
@@ -110,19 +110,15 @@ Examples of Potential Business Associates Include:
 + e-prescribing services
 + Medical transcription services
 
-In contrast, these folks are NOT Business Associates:
-
+**In contrast, these folks are NOT Business Associates:**
 + Covered Entity’s Workforce
 + Individuals or companies with minimal and incidental exposure to health information, such as a telephone company, electrician, etc.
 + Companies that act as a conduit for PHI, such as the postal service, UPS, private couriers, etc.
 
-
 ## Does my app need to be HIPAA compliant?
-
 This is the most important question you can ask because HIPAA violations can result in some severe penalties.
 
 ### The Difference Between Protected Health Information (PHI) and Consumer Health Information (CHI)
-
 So how do you know if you’re dealing with protected health information (PHI) or consumer health information? The test is pretty simple: if your device or application stores, records or transmits the user’s personally-identifiable health data held in the app or device to a covered entity (see below) then you are dealing with protected health information and need to be HIPAA compliant.
 
 If you are building a wearable device or application that collects health information but does not plan on sharing it with a covered entity at any point in time, then you do not need to be HIPAA compliant.
