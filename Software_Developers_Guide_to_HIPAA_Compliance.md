@@ -174,7 +174,7 @@ Compliance is determined by the adherence to the privacy and security rules outl
 
 ### What Data Should Be Stored in HIPAA Compliant Hosting Environments?
 
-Not all of your application data needs to exist in a HIPAA hosting environment. However, any PHI must be in a HIPAA compliant environment.
+Not all of your application data needs to exist in a HIPAA hosting environment. However, any PHI must be in a HIPAA compliant environment. Amazon has a pretty good [HIPAA compliance whitepaper](https://d0.awsstatic.com/whitepapers/compliance/AWS_HIPAA_Compliance_Whitepaper.pdf) that will help provide specific direction for AWS hosted environments.
 
 ### Network and application security
 
@@ -284,3 +284,20 @@ Other parts of the Physical Safeguards are handled by your internal rules around
 
 + Workstation Security (required): Implement physical safeguards for all workstations that access ePHI, to restrict access to authorized users.
 + Workstation Use (required): Implement policies and procedures that specify the proper functions to be performed, how those functions are to be performed and the physical attributes of the surroundings of a specific workstation or class of workstation that can access ePHI.
+## Additional Tips and Considerations
+
+### Understanding Responsibilties and Regulations
+
++ If you are the product owner, take time to think about your use case for the app. Considering what information will be handled and stored and where in particular it will be stored is key if when you are dealing with PHI.
++ As previously stated, you should also consider what other regulations might play a prominent role in shaping your application’s design. The [FTC offers a tool](https://www.ftc.gov/tips-advice/business-center/guidance/mobile-health-apps-interactive-tool) to help you determine what will apply.
+
+### Minimizing Risk and Exposure
+
++ Avoid accessing, displaying or storing data you don’t need. For example, if you don’t need full birthdate then don’t gather it. Any personal info you ask for should have a clear purpose.
++ Write and follow a clear privacy policy. This is important in any mobile app that collects user data, but especially so in health apps.
++ A highly effective and often overlooked way to avoid data security problems  is not to store it at all. Avoid storing or caching PHI whenever possible. Because of [how flash storage works](https://www.usenix.org/legacy/events/fast11/tech/full_papers/Wei.pdf) — e.g., wear leveling, block mapping — you can’t actually guarantee that data you write to system memory will be deleted.
++ Be careful with geolocation data. [HIPAA guidance](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html) for what constitutes geographically identifying someone is information about any subdivision smaller than a state. Geolocation data about a patient can turn data that is fairly innocuous into PHI.
++ Local session timeout — your  app should certainly force re-authentication after inactivity. Consider your use-case for a good idea of how long that period should be.
++ Push notifications are often called out as a vulnerability. Ensure that PHI is never sent to push notifications that could easily be seen by someone other than the patient it pertains to.
++Data can leak out where it’s not intended. Avoid leaking PHI into backups and log files which are generally very loosely protected. SD cards in Android devices often have very loose access permissions and are particularly vulnerable as a result
++Mobile devices use a number of different protocols for sending information. SMS and MMS are not encrypted, so make sure they don’t contain PHI.
