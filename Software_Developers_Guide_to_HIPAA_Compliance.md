@@ -45,7 +45,7 @@ Like the four horsemen, these are the significant pieces that govern what you do
 + HIPAA Enforcement Rule
 + HIPAA Breach Notification Rule
 
-**Software developers mostly need to focus on the Privacy Rule, Security Rule and Breach Notification Rule.**
+**Software developers mostly need to focus on the Security Rule and certain aspects of the Privacy and Breach Notification Rules.**
 
 ## Important Terms to Know
 ### Protected Health Information (PHI)
@@ -191,6 +191,12 @@ A good infrastructure design eliminates all single-point-of-failures. While runn
 It's best to design your hosting environment with at least 2 web servers behind a load balancer and 2 database servers on an active/passive failover setup.
 
 Most environments are more complicated than just a 2-tier setup, so you must implement an infrastructure design best suited for your business. However, the point remains, high-availability and redundancy are crucial parts of your HIPAA compliant infrastructure.
+
+## The HIPAA Privacy Rule (WIP)
+https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html
+https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html
+https://nvlpubs.nist.gov/nistpubs/ir/2015/nist.ir.8053.pdf
+https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering/collaboration-space/browse/de-identification-tools
 
 ## The HIPAA Security Rule
 
