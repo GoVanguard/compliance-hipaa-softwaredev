@@ -45,7 +45,7 @@ Like the four horsemen, these are the significant pieces that govern what you do
 + HIPAA Enforcement Rule
 + HIPAA Breach Notification Rule
 
-**Software developers mostly need to focus on the Security Rule and Breach Notification Rule.**
+**Software developers mostly need to focus on the Privacy Rule, Security Rule and Breach Notification Rule.**
 
 ## Important Terms to Know
 ### Protected Health Information (PHI)
